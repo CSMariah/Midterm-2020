@@ -6,8 +6,9 @@ background-color: lightgray;
   height: 200px;
   width: 200px;
   background-color: #acd6fd;
-  margin:0;
+  margin:1px;
   padding: 0;
+  border: solid 2px gray;
 }
 span {
   margin: 0;
