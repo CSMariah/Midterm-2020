@@ -5,22 +5,25 @@ background-color: lightgray;
   display: inline-block;
   height: 200px;
   width: 200px;
-  background-color: lightblue;
-  margin: 0;
+  background-color: #acd6fd;
+  margin:0;
   padding: 0;
 }
 span {
   margin: 0;
   display: inline-block;
   vertical-align: middle;
-  line-height: normal;
 }
 #runButton {
   color: #ffffff;
   background-color: blue;
   border-radius: 20%;
-  padding: 20px;
+  padding-top: 10px;
+  padding-bottom:10px;
+  padding-right: 40px;
+  padding-left: 40px;
   margin: 40px;
+  font-family: 'Merriweather Sans', sans-serif;
 }
 h1 {
   font-family: 'Merriweather Sans', sans-serif;
@@ -35,7 +38,7 @@ h1 {
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
+	font-family: 'Merriweather Sans', sans-serif;
 	font-size:15px;
 	font-weight:bold;
 	padding:6px 24px;
@@ -52,4 +55,20 @@ h1 {
 }
 .socialApp img:hover {
     background: #fcf4e6;
+}
+div {
+  display: inline-block;
+}
+.square {
+  width: 200px;
+  height: 200px;
+  background: #acd6fd;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin: 1px;
+  border: solid 2px gray;
+}
+.box {
+  display: inline-block;
 }

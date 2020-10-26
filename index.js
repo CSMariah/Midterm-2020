@@ -65,39 +65,18 @@ function randomNumbers() {
   var S9 = number[Math.floor(Math.random()*number.length)];
   document.getElementById("s9").innerHTML = S9;
 }
+var squares = document.getElementsByClassName("square");
 
-document.getElementById("s1").addEventListener("mouseover", function(){
-  document.getElementById("s1").style.visibility = "hidden";
-})
-
-document.getElementById("s2").addEventListener("mouseover", function(){
-  document.getElementById("s2").style.visibility = "hidden";
-})
-
-document.getElementById("s2").addEventListener("mouseover", function(){
-  document.getElementById("s2").style.visibility = "hidden";
-})
-document.getElementById("s3").addEventListener("mouseover", function(){
-  document.getElementById("s3").style.visibility = "hidden";
-})
-document.getElementById("s4").addEventListener("mouseover", function(){
-  document.getElementById("s4").style.visibility = "hidden";
-})
-document.getElementById("s5").addEventListener("mouseover", function(){
-  document.getElementById("s5").style.visibility = "hidden";
-})
-document.getElementById("s6").addEventListener("mouseover", function(){
-  document.getElementById("s6").style.visibility = "hidden";
-})
-document.getElementById("s7").addEventListener("mouseover", function(){
-  document.getElementById("s7").style.visibility = "hidden";
-})
-document.getElementById("s8").addEventListener("mouseover", function(){
-  document.getElementById("s8").style.visibility = "hidden";
-})
-document.getElementById("s9").addEventListener("mouseover", function(){
-  document.getElementById("s9").style.visibility = "hidden";
-})
-function alertAfterHovering() {
-alert(document.getElementById("s1").innerHTML+" "+document.getElementById("s2").innerHTML+" "+document.getElementById("s3").innerHTML+" "+document.getElementById("s4").innerHTML+" "+document.getElementById("s5").innerHTML+" "+document.getElementById("s6").innerHTML+" "+document.getElementById("s7").innerHTML+" "+document.getElementById("s8").innerHTML+" "+document.getElementById("s9").innerHTML)
+for (square of squares) {
+  square.addEventListener("mouseenter", addNumber);
+}
+var total = [];
+function addNumber(e) {
+  if(e.target.textContent) {
+    total.push(e.target.textContent);
+    e.target.textContent = "";
+    if(total.length === squares.length) {
+      alert(total);
+    }
+  }
 }
