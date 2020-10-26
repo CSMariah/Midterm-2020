@@ -76,7 +76,7 @@ function addNumber(e) {
     total.push(e.target.textContent);
     e.target.textContent = "";
     if(total.length === squares.length) {
-      alert(total);
+     alert("The order in which the numbers disappeared is: "+ total);
     }
   }
 }
