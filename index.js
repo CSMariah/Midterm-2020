@@ -68,7 +68,7 @@ function randomNumbers() {
 var squares = document.getElementsByClassName("square");
 
 for (square of squares) {
-  square.addEventListener("mouseenter", addNumber);
+  square.addEventListener("mouseover", addNumber);
 }
 var total = [];
 function addNumber(e) {
